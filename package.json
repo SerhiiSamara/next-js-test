@@ -1,0 +1,25 @@
+{
+	"name": "next-js-test",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "next dev"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"components": "^0.1.0",
+		"next": "^13.4.10",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"react-router-dom": "^6.14.1",
+		"sass": "^1.63.6",
+		"styled": "^1.0.0",
+		"styled-components": "^6.0.4"
+	},
+	"devDependencies": {
+		"@types/styled-components": "^5.1.26"
+	}
+}
