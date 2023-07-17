@@ -1,12 +1,10 @@
-import { useEffect, useState } from "react";
-import Link from "next/link";
 import styles from "../styles/users.module.scss";
+import MainContainer from "../components/MainContainer";
 import A from "../components/A";
-// import { Item, List, ItemLink } from "./users.styled";
 
 const Users = ({ users }) => {
   return (
-    <div>
+    <MainContainer keywords={"users list"} title="Users list">
       <h1 className={styles.title}>Users list</h1>
       <ul className={styles.list}>
         {users.map((user) => (
@@ -19,7 +17,7 @@ const Users = ({ users }) => {
           </li>
         ))}
       </ul>
-    </div>
+    </MainContainer>
   );
 };
 

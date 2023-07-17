@@ -1,13 +1,16 @@
 import { useRouter } from "next/router";
 import styles from "../../styles/[id].module.scss";
+import MainContainer from "../../components/MainContainer";
 
 export default function ({ user }) {
   const { query } = useRouter();
   return (
-    <div className={styles.wrapp}>
-      <h1>User with id {query.id}</h1>
-      <div> Name user - {user.name}</div>
-    </div>
+    <MainContainer keywords={user.name} title={user.name}>
+      <div className={styles.wrapp}>
+        <h1>User with id {query.id}</h1>
+        <div> Name user - {user.name}</div>
+      </div>
+    </MainContainer>
   );
 }
 

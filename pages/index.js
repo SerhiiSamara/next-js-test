@@ -1,17 +1,11 @@
-import Link from "next/link";
 import styles from "../styles/index.module.scss";
-import A from "../components/A";
-// import { NavBar, NavigationLink } from "./index.styled";
+import MainContainer from "../components/MainContainer";
 
 const Index = () => {
   return (
-    <div>
-      <nav className={styles.nav}>
-        <A href={"/"} text="Main" className={styles.link} />
-        <A href={"/users"} text="Users" />
-      </nav>
+    <MainContainer keywords={"main page"} title="main page">
       <h1 className={styles.title}>Main page</h1>
-    </div>
+    </MainContainer>
   );
 };
 export default Index;
