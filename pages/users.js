@@ -7,14 +7,14 @@ import A from "../components/A";
 const Users = ({ users }) => {
   return (
     <div>
-      <h1>Список пользователей</h1>
+      <h1 className={styles.title}>Users list</h1>
       <ul className={styles.list}>
         {users.map((user) => (
           <li key={user.id}>
             <A
               href={`/users/${user.id}`}
               text={user.name}
-              className={styles.link}
+              className={styles.linkColor}
             />
           </li>
         ))}

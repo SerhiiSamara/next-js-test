@@ -10,7 +10,7 @@ const Index = () => {
         <A href={"/"} text="Main" className={styles.link} />
         <A href={"/users"} text="Users" />
       </nav>
-      <h1>Main page</h1>
+      <h1 className={styles.title}>Main page</h1>
     </div>
   );
 };
